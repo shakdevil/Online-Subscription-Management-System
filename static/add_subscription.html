@@ -1,0 +1,73 @@
+<!-- add_subscription.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Subscription</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2980B9, #6DD5FA);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-bottom: 12px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(to right, #45a29e, #b8f2e6);
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Subscription</h1>
+    
+    <form action="D:\HYPERVISER\ORMA\static\add_subscription" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="cost">Cost:</label>
+        <input type="number" name="cost" required>
+
+        <label for="renewal_date">Renewal Date:</label>
+        <input type="date" name="renewal_date" required>
+
+        <label for="billing_cycle">Billing Cycle:</label>
+        <input type="text" name="billing_cycle">
+
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+
+        <button type="submit">Add Subscription</button>
+    </form>
+</body>
+</html>

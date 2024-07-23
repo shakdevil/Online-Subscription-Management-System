@@ -1,0 +1,116 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORMA - Notify the Un-Noted</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2980B9, #6DD5FA);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to bottom, #2980B9, #6DD5FA);
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        thead th {
+            background-color: #2980B9;
+            color: #fff;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        form {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-bottom: 12px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(to right, #45a29e, #b8f2e6);
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>ORMA - Notify the Un-Noted</h1>
+    <p>Online Resource for Money Managing and Accounting</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Renewal Date</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            Online Resource for Money Managing and Accounting
+                <tr>
+                    <td>Name of the subscription</td>
+                    <td>cost of the subscription</td>
+                    <td>Mention the date of renewal</td>
+                    <td>Category of the pack</td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+    <form action="D:\HYPERVISER\ORMA\static\add_subscription" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="cost">Cost:</label>
+        <input type="number" name="cost" required>
+
+        <label for="renewal_date">Renewal Date:</label>
+        <input type="date" name="renewal_date" required>
+
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+
+        <button type="submit">Add Subscription</button>
+    </form>
+</body>
+</html>

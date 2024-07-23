@@ -1,0 +1,10 @@
+your_project/
+├── static/
+│   ├── style.css
+│   └── script.js
+├── templates/
+│   ├── dashboard.html
+│   ├── chatbot.html
+│   └── login.html
+├── app.py
+└── requirements.txt
